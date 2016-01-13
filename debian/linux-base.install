@@ -1,0 +1,2 @@
+bin/linux-version usr/bin
+lib/DebianLinux.pm usr/share/perl5
