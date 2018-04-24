@@ -1,3 +1,82 @@
+linux-base (4.5ubuntu1~16.04.1) xenial; urgency=low
+
+  * Update xenial to the latest linux-base. (LP: #1766728)
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Tue, 24 Apr 2018 18:36:02 -0300
+
+linux-base (4.5ubuntu1) artful; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - do not install /usr/bin/perf, perf.8, bash-completion/perf
+      which are provided by linux-tools-common (LP:1008713)
+
+ -- Andy Whitcroft <apw@ubuntu.com>  Fri, 28 Apr 2017 05:16:31 +0100
+
+linux-base (4.5) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Danish debconf template translation.
+    Thanks to Joe Dalton <joedalton2@yahoo.dk> (Closes: #830587)
+  * Update Brazilian Portuguese debconf templates translation.
+    Thanks to Diego Neves <diego@diegoneves.eti.br> (Closes: #830691)
+
+  [ Ben Hutchings ]
+  * Update Dutch debconf template translations (Frans Spiesschaert)
+    (Closes: #837097)
+  * perf: Drop support for versions older than 3.2
+  * Use dh with debhelper compat level 9
+  * Add bash completion wrapper for perf (Closes: #702482)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sat, 17 Sep 2016 00:59:15 +0100
+
+linux-base (4.4) unstable; urgency=medium
+
+  [ Ben Hutchings ]
+  * Update debconf template translations:
+    - Portuguese (Américo Monteiro) (Closes: #826779)
+    - Polish (Łukasz Dulny)
+    - Japanese (Victory)
+    - Russian (Yuri Kozlov) (Closes: #828772)
+    - German (Markus Hiereth)
+    - French (Jean-Pierre Giraud) (Closes: #830171)
+  * linux-check-removal: Fix substitution of package name in debconf title
+
+  [ Salvatore Bonaccorso ]
+  * Update Swedish debconf template translation.
+    Thanks to Martin Bagge <brother@bsnet.se> (Closes: #828725)
+  * Update Czech debconf template translation.
+    Thanks to Michal Simunek <michal.simunek@gmail.com> (Closes: #828944)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Fri, 08 Jul 2016 17:54:11 +0200
+
+linux-base (4.3) unstable; urgency=medium
+
+  * Add linux-check-removal command for use by package prerm scripts
+    - Override lintian warning and error for this unusual debconf usage
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Mon, 06 Jun 2016 17:06:15 +0100
+
+linux-base (4.2) unstable; urgency=medium
+
+  * Change source format to 3.0 (native) so that .git directory is excluded
+    by default
+  * Add manual page for linux-update-symlinks
+  * read_kernelimg_conf(): Quietly ignore settings used only by kernel-package
+  * debian/rules: Add build-{arch,indep} targets
+  * debian/control: Update policy version to 3.9.8; no changes required
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 05 Jun 2016 23:03:37 +0100
+
+linux-base (4.1) unstable; urgency=medium
+
+  * Adjust for migration to git:
+    - Add .gitignore files
+    - debian/control: Update Vcs-* fields (Closes: #824748)
+  * Add image_stem() and read_kernelimg_conf() functions to Perl module
+  * Add linux-update-symlinks command for use by package maintainer scripts
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sun, 05 Jun 2016 02:13:38 +0100
+
 linux-base (4.0ubuntu1) xenial; urgency=low
 
   * Merge from Debian unstable.  Remaining changes:
