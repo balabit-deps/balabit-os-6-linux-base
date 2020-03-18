@@ -1,3 +1,9 @@
+linux-base (4.5ubuntu1.1~16.04.1) xenial; urgency=medium
+
+  * Add linux-base-sgx package with SGX udev rules (LP: #1867820).
+
+ -- Marcelo Henrique Cerri <marcelo.cerri@canonical.com>  Wed, 18 Mar 2020 08:32:20 -0300
+
 linux-base (4.5ubuntu1~16.04.1) xenial; urgency=low
 
   * Update xenial to the latest linux-base. (LP: #1766728)
